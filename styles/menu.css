@@ -1,0 +1,27 @@
+.title1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 47.02px;
+}
+
+.title2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 71.8px;
+}
+
+.menunavtext{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+  text-align: center;
+  
+}
+
+.menunavtextin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}

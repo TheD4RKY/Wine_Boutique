@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.poppinsbold{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+
+
+.divbodyborder{
+  width:62.5%;
+  margin: auto;
+  align-content: center;
+  background-color: aqua;
+}
+
+body{
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
