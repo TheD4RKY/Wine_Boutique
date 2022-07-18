@@ -60,15 +60,19 @@
 .wineoverlay{
   width: 100%;
   height: 385px;
-  background: rgba(29, 50, 88, 0.6);
+  background: rgba(29, 50, 88, 0);
   position: absolute;
  display: flex;
  align-items: center;
+ flex-direction: column;
   justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .wineoverlay:hover{
   background: rgba(29, 50, 88, 0.9);
+  opacity: 1;
 
 }
 
@@ -83,4 +87,22 @@
   text-align: center;
   color: white;
   opacity: 1;
+}
+
+.wineoverlaydetail{
+  font-family: 'Poppins', sans-serif;
+  font-size: 31.49px;
+  text-decoration: underline;
+  color:white;
+  font-weight: bold;
+  padding-top: 3rem;
+  margin-top: 2rem;
+}
+
+.wineoverlaycounter{
+  font-family: 'Poppins', sans-serif;
+  font-size: 26.12px;
+  color:white;
+  font-weight: bold;
+  padding-bottom: 2rem;
 }
