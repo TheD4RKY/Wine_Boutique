@@ -1,0 +1,29 @@
+.saleheader{
+padding-top: 6.5rem;
+font-size: 71.8px;
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+color: #C47D59;
+
+
+}
+.saledescription{
+  padding-top: 2rem;
+font-size: 18px;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+color: #1D3258;
+padding-bottom: 12rem;
+
+}
+.salebutton{
+  
+  width: 317px; 
+  height: 71px; 
+  border: 2px solid #C47D59; 
+  color: #1D3258; 
+  font-size: 18px; 
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold; 
+  background-color: transparent;
+}

@@ -1,3 +1,11 @@
+.winediv{
+  display: flex; 
+  flex-direction: row;
+}
+
+.winediv2{
+  width: 25%;
+}
 
 .winename{
   font-family: 'Poppins', sans-serif;
@@ -105,4 +113,16 @@
   color:white;
   font-weight: bold;
   padding-bottom: 2rem;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .winediv{
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .winediv2{
+    width: 100%;
+  }
 }

@@ -1,0 +1,46 @@
+.newsheader{
+  font-size: 71.8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #C47D59;
+  line-height: 5rem;
+}
+
+.newstext{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1D3258;
+
+}
+
+.newsinput{
+width: 410px;
+border: 2px solid #C47D59;
+height: 50px;
+color: #1D3258;
+background-color: white;
+font-size: 18px;
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: italic;
+
+}
+
+.newssubmit{
+  width: 272px;
+  border: 0px;
+  height: 54px;
+  text-align: center;
+  color: white;
+  background-color: #1D3258;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+}
+
+::placeholder { 
+color: #1D3258;
+opacity: 1; 
+padding-left: 1rem;
+}

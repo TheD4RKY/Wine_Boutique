@@ -1,0 +1,39 @@
+.copyright{
+  height: 58px;
+  width: 100%;
+  background-color: #222F5E;
+
+}
+
+.copyrighttext1{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 400;
+ 
+}
+
+.copyrighttext2{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #C47D59;
+  font-weight: 400;
+ 
+}
+
+.copyrighttext3{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 400;
+  
+}
+
+.copyrighttext4{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #C47D59;
+  font-weight: bold;
+  text-decoration: underline;
+  
+}

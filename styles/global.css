@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+@font-face {
+  font-family: 'Gloss Drop';
+  src: url("../font/Gloss\ Drop.otf") format("opentype");
+}
 
 .poppinsbold{
   font-family: 'Poppins', sans-serif;
@@ -11,7 +16,7 @@
   width:62.5%;
   margin: auto;
   align-content: center;
-  background-color: aqua;
+  
 }
 
 body{
