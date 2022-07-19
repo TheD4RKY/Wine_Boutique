@@ -5,6 +5,12 @@
 
 .winediv2{
   width: 25%;
+  max-width: 300px;
+  background-color: white;
+}
+
+.winedivx2{
+  display:contents;
 }
 
 .winename{
@@ -83,7 +89,17 @@
   opacity: 1;
 
 }
-
+.buttonunderwine{
+  cursor: pointer;
+  border: 2px solid #C47D59;
+color: #1D3258;
+background-color: transparent;
+transition: 0.3s;
+}
+.buttonunderwine:hover{
+  background-color: #C47D59;
+  color: white;
+}
 .wineoverlaybutton{
   width: 246px;
   height: 71px;
@@ -95,16 +111,30 @@
   text-align: center;
   color: white;
   opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.wineoverlaybutton:hover{
+  background-color: white;
+  border: 2px solid #C47D59;
+  color: #C47D59;
 }
 
 .wineoverlaydetail{
   font-family: 'Poppins', sans-serif;
   font-size: 31.49px;
-  text-decoration: underline;
+  
   color:white;
   font-weight: bold;
   padding-top: 3rem;
   margin-top: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.wineoverlaydetail:hover{
+  text-decoration: underline;
 }
 
 .wineoverlaycounter{
@@ -115,14 +145,94 @@
   padding-bottom: 2rem;
 }
 
+.overtext{
+  height: 102px; 
+  color: #C47D59; 
+  font-size: 102px; 
+  width:100%; 
+  font-family: 'Gloss Drop'; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+@media (min-width: 1280px) and (max-width: 1600px){
+  .winedivx2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .winediv{
+    display: flex; 
+    flex-direction: column;
+  }
+  .winediv2{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  .winedivx2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .winediv{
+    display: flex; 
+    flex-direction: column;
+  }
+  .winediv2{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .winediv{
+    display: flex; 
+    flex-direction: column;
+    
+  }
+  .winediv2{
+    width: 100%;
+  }
+  .winedivx2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
   .winediv{
     display: flex; 
     flex-direction: column;
+    margin: auto;
   }
 
   .winediv2{
     width: 100%;
+    min-width: 300px;
+  }
+  .overtext{
+    font-size: 82px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  .winediv{
+    display: flex; 
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .winediv2{
+    width: 100%;
+    min-width: 280px;
+  }
+
+  .overtext{
+    font-size: 62px;
   }
 }

@@ -24,7 +24,7 @@ font-size: 18px;
 font-family: 'Poppins', sans-serif;
 font-weight: 500;
 font-style: italic;
-
+padding-left: 2rem;
 }
 
 .newssubmit{
@@ -37,10 +37,139 @@ font-style: italic;
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold; 
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newssubmit:hover{
+  border: 1px solid #1D3258;
+  color: #1D3258;
+  background-color: white;
 }
 
 ::placeholder { 
 color: #1D3258;
 opacity: 1; 
-padding-left: 1rem;
+text-align: center;
 }
+
+.newsform{
+  display:flex; 
+  flex-direction:row;
+}
+
+.newsformdiv{
+  display:flex;
+  flex-direction:row;
+  padding-top: 7rem; 
+}
+
+.newsmaindiv{
+  display:flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+@media (min-width: 1025px) and (max-width: 1480px){
+  .newssubmit{
+    width: 50%;
+  }
+  .newsinput{
+    width: 100%;
+  }
+
+.newsform{
+display:flex; 
+flex-direction: column;
+}
+
+.newsformdiv{
+padding-top: 2rem;
+display:flex; 
+flex-direction: column;
+}
+.newsmaindiv{
+display:flex; 
+flex-direction: column; 
+justify-content: space-between;
+}
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px){
+  .newssubmit{
+    width: 98.5%;
+  }
+  .newsinput{
+    width: 100%;
+  }
+
+.newsform{
+display:flex; 
+flex-direction: column;
+}
+
+.newsformdiv{
+padding-top: 2rem;
+display:flex; 
+flex-direction: column;
+}
+.newsmaindiv{
+display:flex; 
+flex-direction: column; 
+justify-content: space-between;
+}
+}
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .newssubmit{
+      width: 98%;
+    }
+    .newsinput{
+      width: 100%;
+    }
+
+.newsform{
+  display:flex; 
+  flex-direction: column;
+}
+
+.newsformdiv{
+  padding-top: 2rem;
+  display:flex; 
+  flex-direction: column;
+}
+.newsmaindiv{
+  display:flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+}
+  }
+
+  @media (max-width: 480px) {
+    .newssubmit{
+      width: 97%;
+    }
+    .newsinput{
+      width: 100%;
+    }
+
+.newsheader{
+  font-size: 61px;
+}
+
+.newsform{
+  display:flex; 
+  flex-direction: column;
+}
+
+.newsformdiv{
+  padding-top: 2rem;
+  display:flex; 
+  flex-direction: column;
+}
+.newsmaindiv{
+  display:flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+}
+  }

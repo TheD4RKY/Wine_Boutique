@@ -1,13 +1,19 @@
+.titlediv{
+  padding-top: 6.8rem;
+}
+
 .title1{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 47.02px;
+  color: #C47D59;
 }
 
 .title2{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 71.8px;
+  color: #C47D59;
 }
 
 .menunavtext{
@@ -18,10 +24,112 @@
   background-color: white;
 }
 
+.activetext{
+  background-color: #C47D59;
+  color: white;
+}
+
 .menunavtextin{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
+  transition: 0.3s;
+  cursor: pointer;
 }
+
+.menunavtextin:hover{
+  background-color: #C47D59;
+  color: white;
+}
+
+.menunav{
+  height: 162px; 
+  width: 100%; 
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .title1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 37.02px;
+    color: #C47D59;
+  }
+  
+  .title2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 61.8px;
+    color: #C47D59;
+  }
+
+  .titlediv{
+    padding-top: 6.8rem;
+  }
+
+  .menunav{
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .title1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 37.02px;
+    color: #C47D59;
+  }
+  
+  .title2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 51.8px;
+    color: #C47D59;
+  }
+
+  .titlediv{
+    padding-top: 8.8rem;
+  }
+
+  .menunav{
+    display: none;
+  }
+
+}
+
+ @media (max-width: 480px) {
+  .title1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 27.02px;
+    color: #C47D59;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .title2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 51.8px;
+    color: #C47D59;
+    line-height: 3.8rem;
+  }
+
+  .menunav{
+    display: none;
+  }
+
+  .titlediv{
+    padding-top: 10.8rem;
+  }
+
+        }

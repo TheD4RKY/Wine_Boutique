@@ -1,0 +1,27 @@
+.paddingdiv{
+  padding-top: 14.45rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .paddingdiv{
+    padding-top: 16.45rem;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .paddingdiv{
+    padding-top: 15.45rem;
+    
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .paddingdiv{
+    padding-top: 15.45rem;
+    
+  }
+
+}

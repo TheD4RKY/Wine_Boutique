@@ -26,4 +26,109 @@ padding-bottom: 12rem;
   font-family: 'Poppins', sans-serif; 
   font-weight: bold; 
   background-color: transparent;
+  cursor: pointer;
+  transition: 0.3;
+}
+.salebutton:hover{
+  background-color: #C47D59;
+  border: 2px solid #C47D59;
+  color: white;
+}
+.saleimg{
+  display: flex; flex-direction: column;
+}
+
+.saleimg2{
+  display: none;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+
+  .saledescription{
+    padding-bottom: 2.5rem;
+  }
+
+  .saleimg{
+    
+    display: none;
+  }
+  
+  .saleimg2{
+    display: flex; flex-direction: column;
+    max-height: 650px;
+    max-width: 532px;
+  }
+  .salebuttondiv{
+    padding-top: 3rem;
+    
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .saledescription{
+    padding-bottom: 2.5rem;
+  }
+
+  .saleimg{
+    
+    display: none;
+  }
+  
+  .saleimg2{
+    display: flex; flex-direction: column;
+  }
+  .salebuttondiv{
+    padding-top: 3rem;
+    margin: auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .saledescription{
+    padding-bottom: 2.5rem;
+  }
+
+  .saleimg{
+    
+    display: none;
+  }
+  
+  .saleimg2{
+    display: flex; flex-direction: column;
+  }
+  .salebuttondiv{
+    padding-top: 3rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .salebutton{
+    width: 227px; 
+    height: 51px; 
+    font-size: 18px; 
+    
+
+  }
+  .salebuttondiv{
+    padding-top: 3rem;
+    margin: auto;
+  }
+
+  .saledescription{
+    padding-bottom: 2.5rem;
+  }
+
+  .saleimg{
+    
+    display: none;
+  }
+  
+  .saleimg2{
+    display: flex; flex-direction: column;
+  }
+ .saleheader{
+  line-height: 4rem;
+ }
 }

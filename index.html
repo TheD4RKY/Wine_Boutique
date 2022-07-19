@@ -12,65 +12,92 @@
 <link rel="stylesheet" href="./styles/shoppingcart.css" >
 <link rel="stylesheet" href="./styles/hamburger.css" >
 <link rel="stylesheet" href="./styles/article.css" >
+<link rel="stylesheet" href="./styles/nav.css" >
+<link rel="stylesheet" href="./styles/paddingdiv.css" >
+<link rel="stylesheet" href="./styles/activenav.css" >
 <script src="./js/burgerchange.js"></script>
+<script src="./js/navbar.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 <body style="max-width: 1920px;">
 
   <img src="./public/1.png" style="object-fit: cover; height: 725px; position: absolute; z-index: -1; max-width: 100%;">
   
+   <div class="menu_overlay" id="translatetoggle">
+    <div class="divbodyborder">
+      <div style="display: flex; flex-direction: row; justify-content: space-between;">
+    <ul class="list">
+      <li><a href="#">VŠECHNA VÍNA</a></li>
+      <li><a href="#">BÍLÁ VÍNA</a></li>
+      <li><a href="#">ČERVENÁ VÍNA</a></li>
+      <li><a href="#">RŮŽOVÁ VÍNA</a></li>
+      <li><a href="#">PROSECCO</a></li>
+    </ul>
+    
+
+    <ul class="list">
+      <li><a href="#">OBCHODNÍ PODMÍNKY</a></li>
+      <li><a href="#">DOPRAVA</a></li>
+      <li><a href="#">VRÁCENÍ A REKLAMACE</a></li>
+    </ul>
+
+    <ul class="list">
+      <li><a href="#">FACEBOOK</a></li>
+      <li><a href="#">INSTAGRAM</a></li>
+      <li><a href="#">TEL.: +420 775 105 808</a></li>
+    </ul>
+  </div>
+  </div>
+</div> 
+
 
 <div class="divbodyborder">
   <nav style="height: 101px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
-
-
-<div style="display: flex; flex-direction: row; justify-content: center; padding-bottom: 0.5rem;">
-<div class="container" onclick="myFunction(this)" >
+<div class="container" >
+<div class="container2" onclick="myFunction(this)" style="z-index: 101;">
   <div class="bar1" ></div>
   <div class="bar2" ></div>
   <div class="bar3" ></div>
 </div>
-<div style="font-size: 18px; color: #C47D59; padding-left: 1rem; padding-top: 0.3rem;" class="poppinsbold">
+<div class="poppinsbold menu">
   MENU
 </div>
 </div>
-
-<div>
-  <img src="./public/logo.svg" alt="">
+<div >
+  <img src="./public/logo.svg" class="mainlogo">
 </div>
-
-<div class="shoppin"
-                          >
+<div class="shoppin"                    >
 <img src="./public/2.png" style="color:white; font-size: 18px; padding-right: 2rem;">
-
 <div style="padding-right: 4rem; position: absolute; padding-top: 2.2rem;"><div class="circle" > 0 </div></div>
-<div class="poppinsbold" style="color:white; font-size: 18px; padding-right: 1rem;"> KOŠÍK </div>
+<div class="poppinsbold shoppintext" > KOŠÍK </div>
 </div>
-
 </nav>
 
-<div style="padding-top: 6.8rem;">
+
+
+<div class="titlediv">
   <div class="title1">WINE BOUTIQUE</div>
   <div class="title2">DOBRÝM VÍNEM <br/> 
   TO ZAČÍNÁ...
   </div>
 
 </div>
-<div style="padding-top: 14.45rem;"></div>
+<div class="paddingdiv"></div>
 
 
 
 </div>
 
+<div  style="width:50%; max-height: 732px; position: absolute; right: 0; z-index: -3; padding-bottom: 20rem;">
+  <img src="./public/Color Overlay.png" style="object-fit: cover; position: absolute;  max-height: 732px; right: 0; z-index: -3; padding-bottom: 20rem;"></div>
+<div class="menunav">
 
-<div style="height: 162px; width: 100%; box-shadow: 0px 3px 6px #00000029;">
-
-  <div  style="width:50%; max-height: 732px; position: absolute; right: 0; z-index: -3; padding-bottom: 20rem;">
-    <img src="./public/Color Overlay.png" style="object-fit: cover; position: absolute;  max-height: 732px; right: 0; z-index: -3; padding-bottom: 20rem;"></div>
+ 
 
 <div class="divbodyborder menunavtext" style="height:100%; display: flex; z-index: 1; ">
 
-  <div class="menunavtextin" style=" width: 20%; height:100%;">
+  <div class="menunavtextin activetext" style=" width: 20%; height:100%;">
   VŠECHNA <br/>VÍNA
   </div>
   
@@ -95,15 +122,16 @@
 
 <div class="divbodyborder"> 
   <div style="height: 52px; width:100%; "></div>
-<div style="height: 102px; color: #C47D59; font-size: 102px; width:100%; font-family: 'Gloss Drop'; display: flex; align-items: center; justify-content: center;">
+<div class="overtext">
 Doporučujeme
 </div>
 <div style="height: 52px; width:100%; "></div>
 
-<div style="height: 100%; width: 100%; background-color: white; display: flex; flex-direction: column;">
+<div style="height: 100%; width: 100%;  display: flex; flex-direction: column;">
+
 
 <div class="winediv">
-
+<div class="winedivx2">
 <div style="height: 385px; border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;" class="winediv2">
 <div class="wineoverlay">
   
@@ -132,6 +160,8 @@ Doporučujeme
 </div>
 </div>
 
+
+
 <div style="height: 385px;  border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
   <div class="wineoverlay">
     
@@ -159,7 +189,9 @@ Doporučujeme
   </div>
   </div>
   </div>
+</div>
 
+<div class="winedivx2">
   <div style="height: 385px; border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
     <div class="wineoverlay">
       
@@ -215,14 +247,14 @@ Doporučujeme
       </div>
       </div>
       </div>
-
+</div>
    
         
         
 </div>
 
 <div  class="winediv">
-
+  <div class="winedivx2">
 <div style="height: 385px; border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
   <div class="wineoverlay">
     
@@ -278,7 +310,8 @@ Doporučujeme
     </div>
     </div>
     </div>
-
+  </div>
+  <div class="winedivx2">
     <div style="height: 385px;  border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
       <div class="wineoverlay">
         
@@ -334,11 +367,12 @@ Doporučujeme
         </div>
         </div>
         </div>
+        </div>
       </div>
 
 </div>
 <div style="width:100%; display:flex; justify-content: center; padding-top: 3rem; padding-bottom: 3rem;">
-<button style="width: 305px; height: 71px; border: 2px solid #C47D59; color: #1D3258; font-size: 18; font-family: 'Poppins', sans-serif; font-weight: bold; background-color: transparent;">CELÁ NABÍDKA</button>
+<button class="buttonunderwine" style="width: 305px; height: 71px;   font-size: 18px; font-family: 'Poppins', sans-serif; font-weight: bold; ">CELÁ NABÍDKA</button>
 </div>   
 </div>
 
@@ -353,13 +387,21 @@ Doporučujeme
 <div style="display: flex; flex-direction: column; width: 100%; ">
 <div class="saleheader">NÁZEV AKCE</div>
 <div class="saledescription">Text k akci (doprava zdarma...)</div>
+
+<div class="saleimg2">
+
+  <img src="./public/4.png">
+  
+  </div>
+<div class="salebuttondiv">
 <button class="salebutton">NAKOUPIT</button>
 </div>
-<div style="display: flex; flex-direction: column; ">
-
-<img src="./public/4.png">
-
 </div>
+<div class="saleimg">
+
+  <img src="./public/4.png">
+  
+  </div>
 </div>
 </div>
 
@@ -369,7 +411,7 @@ Doporučujeme
 
 
 <div class="divbodyborder"> 
-<div style="display: flex; flex-direction: row; justify-content: space-between;">
+<div class="articleflex">
 <div style="display: flex; flex-direction: column; ">
 <div class="articleheader">VÍNO <br/> MĚSÍCE</div>
 <div class="article">
@@ -380,7 +422,7 @@ Doporučujeme
   <div class="articletext" style="padding-top: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-    <div style="margin: 0 auto; padding-top: 2rem;">
+    <div style="margin: 0 auto; padding-top: 2rem;" class="articlebuttondiv">
     <button class="articlebutton">KOUPIT VÍNO</button></div>
 </div>
 
@@ -391,14 +433,14 @@ Doporučujeme
 <div style="display: flex; flex-direction: column; ">
 <div class="articleheader">NÁZEV <br/>KATEGORIE</div>
 <div class="article2" >
-<img src="./public/7.png" style="width: 494px; height: 255px; " >
+<img src="./public/7.png" style=" max-height: 255px; " >
 <div class="article2name">EDITOVATELNÝ TITULEK</div>
 <div class="articletext" style="padding-top: 1.3rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-  <div style="margin: 0 auto; padding-top: 2rem;">
+  <div style="margin: 0 auto; padding-top: 2rem;" class="articlebuttondiv">
 <button  class="article2button">PROKLIK</button>
 </div></div>
-<div class="article2undertext">VŠECHNA VINAŘSTVÍ</div>
+
 </div>
 
 </div>
@@ -408,13 +450,13 @@ Doporučujeme
 <img src="./public/5.png" style="width:100%; height: 657.5px; position: absolute; z-index: -3;">
 
 <div class="divbodyborder" style="padding-top: 3rem;"> 
-<div style="display:flex; flex-direction:row; justify-content: space-between;">
+<div class="newsmaindiv">
   <div style="display:flex; flex-direction:column;">
   <div class="newsheader">BUĎTE <br>V OBRAZE</div>
   <div class="newstext" style="padding-top: 1rem;">Přihlaste se k odběru novinek a neunikne<br> vám žádná akce Wine boutique</div>
   </div>
-  <div style="display:flex; flex-direction:row; padding-top: 7rem; ">
-  <form  style="display:flex; flex-direction:row;">
+  <div class="newsformdiv">
+  <form  class="newsform">
     <div style="padding-right: 1rem;">
     <input class="newsinput" type="text" placeholder="VÁŠ E-MAIL" name="EMAIL" >
   </div>
@@ -430,13 +472,13 @@ Doporučujeme
 
 </div>
 <div style="height: 360px;  width: 100%; margin-top: 0.8rem;">
-  <div style="background-color: #e6e6e6; width: 100%; height: 360px; position: absolute; z-index: -2;" >
+  <div class="footerbody" >
 <img src="./public/Color Overlay.svg" style=" object-fit: cover; height: 360px; width: 100%; position: absolute; z-index: -1;"></div>
 <div class="divbodyborder" style="padding-top: 8rem;"> 
 
-<div style="display: flex; flex-direction:row; justify-content: space-between;">
+<div class="footerdiv">
 
-  <div style="display: flex; flex-direction:column;">
+  <div style="display: flex; flex-direction:column; max-height: 100px;">
   <img src="./public/logo.svg" alt="">
   </div>
 
@@ -458,54 +500,56 @@ Doporučujeme
   
   </div>
 
-  <div style="display: flex; flex-direction:column;">
-    <div style="display: flex; flex-direction:row;">
+  <div style="display: flex; flex-direction:column; ">
+    <div style="display: flex; flex-direction:row; " class="footercolflex footercolflexp">
       <div class="column3_1">FB: </div>
-      <div class="column3_2">/wineboutique.cz </div>
+      <div class="column3_2">&nbsp;/wineboutique.cz </div>
     </div>
     
-    <div style="display: flex; flex-direction:row;">
+    <div style="display: flex; flex-direction:row;" class="footercolflex">
       <div class="column3_1">IG: </div>
-      <div class="column3_2">/@wineboutique.cz </div>
+      <div class="column3_2">&nbsp;/@wineboutique.cz </div>
     </div>
   
-    <div style="display: flex; flex-direction:row; padding-top: 1.8rem;">
+    <div style="display: flex; flex-direction:row; padding-top: 1.8rem;" class="footercolflex">
       <div class="column3_1">TEL.: </div>
-      <div class="column3_2">+420 775 105 808 </div>
+      <div class="column3_2">&nbsp;+420 775 105 808 </div>
     </div>
 
-    <div style="display: flex; flex-direction:row;">
+    <div style="display: flex; flex-direction:row;" class="footercolflex">
       <div class="column3_1">E-MAIL: </div>
-      <div class="column3_2">wine@wineboutique.cz </div>
+      <div class="column3_2">&nbsp;wine@wineboutique.cz </div>
     </div>
 
+    
   </div>
 
-</div>
-
-<div class="underlineinfo">Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku.
-   Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; 
-   v případě technického výpadku pak nejpozději do 48 hodin.
-    Vína a sekty prodáváme výhradně starším 18 let.</div>
+  
 
 </div>
 
-<div class="copyright" style="margin-top: 2.7rem;">
+
+<div class="underlineinfo ">Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku.
+  Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; 
+  v případě technického výpadku pak nejpozději do 48 hodin.
+   Vína a sekty prodáváme výhradně starším 18 let.</div>
+
+</div>
+
+<div class="copyright" style="margin-top: 4.7rem;">
 <div class="divbodyborder" style="display: flex; flex-direction:row; justify-content: space-between; padding: 18px 0;">
 
 
-<div style="display: flex; 
-flex-direction: row;">
+<div class="cpgroup">
 <div class="copyrighttext1" style="padding-right: 0.5rem;">
-  Copyright © 2021
+  Copyright © 2022
 </div>
 <div class="copyrighttext2">
   Wineboutique s.r.o.
 </div></div>
 
 
-<div style="display: flex; 
-flex-direction: row;">
+<div class="cpgroup">
 <div class="copyrighttext3" style="padding-right: 0.5rem;">
   Webdesign by
 </div>

@@ -24,3 +24,30 @@ margin:0;
 padding:0;
 overflow-x:hidden;
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .divbodyborder{
+    width:72.5%;
+
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .divbodyborder{
+    width:82.5%;
+
+  }
+
+
+}
+
+@media (max-width: 480px) {
+
+  .divbodyborder{
+    width:82.5%;
+
+  }
+
+
+}
