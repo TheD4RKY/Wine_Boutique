@@ -1,0 +1,102 @@
+.wineimgflex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 4rem;
+}
+
+.wineimgdiv{
+  height: 510px;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+.wineimgdiv:hover{
+  opacity: 1;
+}
+
+.wineimg{
+  height: 510px;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.wineimg:hover {
+  opacity: 0;
+}
+
+.winedivflex{
+  display: flex;
+  flex-direction: column;
+}
+
+.wineflex{
+  display: flex;
+  flex-direction: row;
+}
+.titledetail{
+
+  color: #C47D59;
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+
+}
+
+.yeardetail{
+  color: #C47D59;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+
+}
+
+.producerdetail{
+  color: #C47D59;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.sugardetail{
+  color: #1D3258;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 4rem;
+}
+
+.alcoholdetail{
+  color: #1D3258;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 0.5rem;
+}
+
+.typedetail{
+  color: #1D3258;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 0.5rem;
+
+}
+
+.descriptiondetail{
+  color: #1D3258;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 1rem;
+  max-width: 300px;
+  min-height: 100px;
+}
+
+.pricedetail{
+  color: #C47D59;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 2rem;
+}

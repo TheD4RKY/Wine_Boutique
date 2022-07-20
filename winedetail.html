@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" >
 <link rel="stylesheet" href="./styles/global.css" >
 <link rel="stylesheet" href="./styles/copyright.css" >
@@ -15,8 +16,10 @@
 <link rel="stylesheet" href="./styles/nav.css" >
 <link rel="stylesheet" href="./styles/paddingdiv.css" >
 <link rel="stylesheet" href="./styles/activenav.css" >
-<link rel="stylesheet" href="./styles/whitewine_components/winefilter.css" >
+<link rel="stylesheet" href="./styles/winedetail_components/winedetail.css" >
+<link rel="stylesheet" href="./styles/winedetail_components/anotherproduct.css" >
 <script src="./js/burgerchange.js"></script>
+<script src="./js/imagezoom.js"></script>
 <script src="./js/navbar.js"></script>
 <script src="./js/navtoggle.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -128,33 +131,62 @@
   
 
 
-<img src="./public/5.png" style="width:100%; height: 720px; position: absolute; z-index: -1;">
 
 
 
-<div class="divbodyborder"> 
-<div style="display: flex; flex-direction: row;">
-<div style="display: flex; flex-direction: column; width: 100%; ">
-<div class="saleheader">NÁZEV AKCE</div>
-<div class="saledescription">Text k akci (doprava zdarma...)</div>
 
-<div class="saleimg2">
-
-  <img src="./public/4.png">
-  
+<div class="divbodyborder">
+  <div class="wineimgflex"> 
+    <div onmousemove="zoom(event)" class="wineimgdiv" style="background-image: url('../public/8.png');">
+<img src="./public/8.png" class="wineimg">
+</div>
+<div class="winedivflex">
+<div class="wineflex">
+<div class="titledetail">DORNFELDER BARRIQUE</div>
+</div>
+<div class="wineflex">
+<div class="yeardetail">2018</div>
+</div>
+<div class="wineflex">
+  <div class="producerdetail">Víno Čejč</div>
   </div>
-<div class="salebuttondiv">
-<button class="salebutton">NAKOUPIT</button>
+<div class="wineflex">
+<div class="sugardetail">Zbytkovy cukr:</div>
+<div class="sugardetail">&nbsp;Suché</div>
 </div>
+<div class="wineflex">
+<div class="alcoholdetail">Alkohol:</div>
+<div class="alcoholdetail">&nbsp;**.*%</div>
 </div>
-<div class="saleimg">
+<div class="wineflex">
+<div class="typedetail">Odrůda:</div>
+<div class="typedetail">&nbsp;Bílé</div>
+</div>
+<div class="wineflex">
+<div class="descriptiondetail">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+   Aenean mauris nisi, iaculis a tellus eget, condimentum ornare felis.
+    Nunc vel velit eget est ornare mattis.
+     Duis consectetur lorem non turpis sollicitudin eleifend.
+      Nunc ac aliquet odio, nec elementum erat.
+   Aenean interdum leo justo, ac interdum risus bibendum id.</div>
+</div>
+<div class="wineflex">
+<div class="pricedetail">Cena:</div>
+<div class="pricedetail">&nbsp;999Kč</div>
 
-  <img src="./public/4.png">
-  
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="divbodyborder">
+  <div class="anotherproductdiv">
+
+
+
   </div>
 </div>
-</div>
-
 
 
 
