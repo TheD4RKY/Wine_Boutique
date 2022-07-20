@@ -7,7 +7,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color:white; 
+
+  transition: 0.1s;
 }
+
+.shoppin:hover{
+  background-color: white;
+  color: #C47D59;
+  
+}
+
 
 .circle{
 display: block;
@@ -25,7 +35,7 @@ display: block;
     }
 
     .shoppintext{
-      color:white; 
+     
       font-size: 18px; 
       padding-right: 1rem;
     }

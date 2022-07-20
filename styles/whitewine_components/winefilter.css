@@ -1,0 +1,184 @@
+.pageselect{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1D3258;
+  line-height: 45px;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  margin: 15px;
+  cursor: pointer;
+  
+}
+
+.pageselect:hover{
+  border: 2px solid #C47D59;
+  border-radius: 25px;
+  margin: 13px;
+}
+
+.pageselectactive{
+  cursor: pointer;
+  border: 2px solid #C47D59;
+  border-radius: 25px;
+  margin: 13px;
+}
+
+.filtertext{
+  text-align: left;
+font: normal normal 600 18px/29px Poppins;
+color: #1D3258;
+width: 190px;
+
+}
+
+.filterselect{
+  text-align: center;
+color: #1D3258;
+font: normal normal bold 18px/29px Poppins;
+cursor: pointer;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+
+.filterselect:hover{
+  text-decoration: underline;
+}
+
+.filterselectactive{
+  text-align: center;
+  text-decoration: underline;
+  color: #C47D59;
+  font: normal normal bold 18px/29px Poppins;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.filterselectactive:hover{
+  color: #ad6f50;
+}
+
+.filterflex{
+  display: flex; 
+  flex-direction: row;  
+  height: 52px;
+}
+
+.filtercol{
+  height: 52px; 
+  display: flex; 
+  flex-direction: row; 
+  padding-top: 2rem;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .filterselectactive{
+    font-size: 14px;
+  }
+    .filterselect{
+      font-size: 14px;
+
+    }
+.filtertext{
+  font-size: 14px;
+}
+  }
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .countpadding{
+    padding-top: 3rem;
+  }
+
+  .filtercol{
+    flex-direction: column;
+    padding-left: 0rem;
+    padding-bottom: 3rem;
+  }
+
+  .pageselect{
+    line-height: 40px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .pageselect:hover{
+    margin: 8px;
+  
+  }
+
+  .filtertext{
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .filterflex{
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .filterselectactive{
+    width: 180px;
+    margin: auto;
+    padding-right: 1rem;
+  }
+  .filterselect{
+    width: 180px;
+    margin: auto;
+    padding-right: 1rem;
+  }
+  .pageselectactive{
+    margin: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+.countpadding{
+  padding-top: 3rem;
+}
+
+  .filtercol{
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .pageselect{
+    line-height: 30px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .pageselect:hover{
+    margin: 8px;
+  
+  }
+
+  .pageselectactive{
+    margin: 8px;
+  }
+
+  .filtertext{
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .filterflex{
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .filterselectactive{
+    width: 180px;
+    margin: auto;
+    padding-right: 1rem;
+  }
+  .filterselect{
+    width: 180px;
+    margin: auto;
+    padding-right: 1rem;
+  }
+}

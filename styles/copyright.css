@@ -43,6 +43,12 @@
   text-decoration: underline;
   
 }
+
+.copyrighttext4:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .cpgroup{
   display: flex; 
 flex-direction: row;

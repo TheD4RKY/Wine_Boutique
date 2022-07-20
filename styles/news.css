@@ -70,6 +70,20 @@ text-align: center;
   justify-content: space-between;
 }
 
+@media (min-width: 1480px) and (max-width: 1762px){
+
+  .newsform{
+    align-items: center;
+    display:flex; 
+    flex-direction: column;
+    padding-bottom: 2rem;
+    }
+    .newsformdiv{
+       padding-top: 3rem;
+    }
+}
+
+
 @media (min-width: 1025px) and (max-width: 1480px){
   .newssubmit{
     width: 50%;

@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="./styles/sale.css" >
 <link rel="stylesheet" href="./styles/footer.css" >
 <link rel="stylesheet" href="./styles/news.css" >
-<link rel="stylesheet" href="./styles/menu.css" >
+<link rel="stylesheet" href="./styles/whitewine_components/menuwhitewine.css" >
 <link rel="stylesheet" href="./styles/wineselect.css" >
 <link rel="stylesheet" href="./styles/shoppingcart.css" >
 <link rel="stylesheet" href="./styles/hamburger.css" >
@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="./styles/nav.css" >
 <link rel="stylesheet" href="./styles/paddingdiv.css" >
 <link rel="stylesheet" href="./styles/activenav.css" >
+<link rel="stylesheet" href="./styles/whitewine_components/winefilter.css" >
 <script src="./js/burgerchange.js"></script>
 <script src="./js/navbar.js"></script>
 <script src="./js/navtoggle.js"></script>
@@ -23,7 +24,7 @@
 </head>
 <body style="max-width: 1920px;" onresize="resize()">
 
-  <img src="./public/1.png" style="object-fit: cover; height: 725px; position: absolute; z-index: -1; max-width: 100%;">
+  <img src="./public/1.png" style="object-fit: cover; height: 332px; position: absolute; z-index: -1; min-width: 100%;">
   
    <div class="menu_overlay" id="translatetoggle">
     <div class="divbodyborder">
@@ -31,11 +32,11 @@
 
     <ul class="list">
       <li class="listactive"><a onclick="toggle(1);">KATEGORIE</a></li>
-      <li class="list1"><a href="#">VŠECHNA VÍNA</a></li>
-      <li class="list1"><a href="#">BÍLÁ VÍNA</a></li>
-      <li class="list1"><a href="#">ČERVENÁ VÍNA</a></li>
-      <li class="list1"><a href="#">RŮŽOVÁ VÍNA</a></li>
-      <li class="list1"><a href="#">PROSECCO</a></li>
+      <li class="list1"><a href="./index.html">VŠECHNA VÍNA</a></li>
+      <li class="list1"><a href="./whitewine.html">BÍLÁ VÍNA</a></li>
+      <li class="list1"><a href="./redwine.html">ČERVENÁ VÍNA</a></li>
+      <li class="list1"><a href="./pinkwine.html">RŮŽOVÁ VÍNA</a></li>
+      <li class="list1"><a href="./proseccowine.html">PROSECCO</a></li>
     </ul>
     
 
@@ -84,13 +85,12 @@
 
 
 <div class="titlediv">
-  <div class="title1">WINE BOUTIQUE</div>
-  <div class="title2">DOBRÝM VÍNEM <br/> 
-  TO ZAČÍNÁ...
+  
+  <div class="title2">BÍLÁ VÍNA
   </div>
 
 </div>
-<div class="paddingdiv"></div>
+
 
 
 
@@ -104,11 +104,11 @@
 
 <div class="divbodyborder menunavtext" style="height:100%; display: flex; z-index: 1; ">
 
-  <div class="menunavtextin activetext indx" style=" width: 20%; height:100%;">
+  <div class="menunavtextin indx" style=" width: 20%; height:100%;">
   VŠECHNA <br/>VÍNA
   </div>
   
-  <div class="menunavtextin ww" style=" width: 20%; height:100%;">
+  <div class="menunavtextin activetext ww" style=" width: 20%; height:100%;">
   BÍLÁ <br/> VÍNÁ
   </div>
   
@@ -128,11 +128,31 @@
 
 
 <div class="divbodyborder"> 
-  <div style="height: 52px; width:100%; "></div>
-<div class="overtext">
-Doporučujeme
+  <div class="filtercol">
+  <div class="filtertext">ŘADIT PODLE NÁZVU:</div>
+  <div class="filterflex">
+  <div class="filterselectactive">A-Z</div>
+  <div class="filterselect">Z-A</div>
+  </div></div>
+<div style="width:100%; ">
+  <div class="filtercol">
+    <div class="filtertext">ŘADIT PODLE CENY:</div>
+    <div class="filterflex">
+  <div class="filterselect">OD NEJLEVNĚJŠÍHO</div>
+  <div class="filterselectactive">OD NEJDRAŽŠÍHO</div>
+  </div></div>
 </div>
-<div style="height: 52px; width:100%; "></div>
+
+
+<div class="divbodyborder"> 
+  <div style="height: 52px; width:100%; display: flex; flex-direction: row; justify-content: center; padding-bottom: 4rem;" class="countpadding">
+    <div class="pageselect pageselectactive">1</div>
+    <div class="pageselect">2</div>
+    <div class="pageselect">3</div>
+    <div class="pageselect">4</div>
+    <div class="pageselect">5</div>
+  </div>
+</div>
 
 <div style="height: 100%; width: 100%;  display: flex; flex-direction: column;">
 
@@ -377,13 +397,137 @@ Doporučujeme
         </div>
       </div>
 
+      <div  class="winediv">
+        <div class="winedivx2">
+      <div style="height: 385px; border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
+        <div class="wineoverlay">
+          
+          <div style="display: flex; flex-direction: column;" class="wineoverlaycounter">
+            <img src="./public/arrow.svg" style="width: 28.67px; height: 8px; padding-left: 0.5rem; padding-bottom: 0.3rem;">
+           999
+            <img src="./public/arrowrev.svg" alt="" style="width: 28.67px; height: 8px;   padding-left: 0.5rem;">
+          </div>
+          <button class="wineoverlaybutton">DO KOŠÍKU</button>
+          <div class="wineoverlaydetail"> 
+            DETAIL
+          </div>
+        </div>
+        
+        <img src="./public/3.png" style="padding-left:1rem; padding-right:1rem; width: 95px; height: 327px;">
+        <div style="height: 327px; display: flex; flex-direction: column; ">
+        <div class="winename">DORNFELDER <br/> BARRIQUE</div>
+        <div class="wineorigin">Víno Čejč</div>
+        <div class="winedate">2018 <br/> bílé suché</div>
+        <div class="winesale">9 999 Kč</div>
+        <div class="wineprice">999 Kč</div>
+        <div style="display: flex; flex-direction: row;">
+        <img src="./public/checkmark.svg" >
+        <div class="wineskladem">Skladem</div>
+        </div>
+        </div>
+        </div>
+      
+        <div style="height: 385px; border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
+          <div class="wineoverlay">
+            
+            <div style="display: flex; flex-direction: column;" class="wineoverlaycounter">
+              <img src="./public/arrow.svg" style="width: 28.67px; height: 8px; padding-left: 0.5rem; padding-bottom: 0.3rem;">
+             999
+              <img src="./public/arrowrev.svg" alt="" style="width: 28.67px; height: 8px;   padding-left: 0.5rem;">
+            </div>
+            <button class="wineoverlaybutton">DO KOŠÍKU</button>
+            <div class="wineoverlaydetail"> 
+              DETAIL
+            </div>
+          </div>
+          
+          <img src="./public/3.png" style="padding-left:1rem; padding-right:1rem; width: 95px; height: 327px;">
+          <div style="height: 327px; display: flex; flex-direction: column; ">
+          <div class="winename">DORNFELDER <br/> BARRIQUE</div>
+          <div class="wineorigin">Víno Čejč</div>
+          <div class="winedate">2018 <br/> bílé suché</div>
+          <div class="winesale">9 999 Kč</div>
+          <div class="wineprice">999 Kč</div>
+          <div style="display: flex; flex-direction: row;">
+          <img src="./public/checkmark.svg" >
+          <div class="wineskladem">Skladem</div>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div class="winedivx2">
+          <div style="height: 385px;  border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
+            <div class="wineoverlay">
+              
+              <div style="display: flex; flex-direction: column;" class="wineoverlaycounter">
+                <img src="./public/arrow.svg" style="width: 28.67px; height: 8px; padding-left: 0.5rem; padding-bottom: 0.3rem;">
+               999
+                <img src="./public/arrowrev.svg" alt="" style="width: 28.67px; height: 8px;   padding-left: 0.5rem;">
+              </div>
+              <button class="wineoverlaybutton">DO KOŠÍKU</button>
+              <div class="wineoverlaydetail"> 
+                DETAIL
+              </div>
+            </div>
+            
+            <img src="./public/3.png" style="padding-left:1rem; padding-right:1rem; width: 95px; height: 327px;">
+            <div style="height: 327px; display: flex; flex-direction: column; ">
+            <div class="winename">DORNFELDER <br/> BARRIQUE</div>
+            <div class="wineorigin">Víno Čejč</div>
+            <div class="winedate">2018 <br/> bílé suché</div>
+            <div class="winesale">9 999 Kč</div>
+            <div class="wineprice">999 Kč</div>
+            <div style="display: flex; flex-direction: row;">
+            <img src="./public/checkmark.svg" >
+            <div class="wineskladem">Skladem</div>
+            </div>
+            </div>
+            </div>
+      
+            <div style="height: 385px; border: 1px solid #1D3258; display: flex; align-items: center; flex-direction: row; position: relative;"  class="winediv2">
+              <div class="wineoverlay">
+                
+                <div style="display: flex; flex-direction: column;" class="wineoverlaycounter">
+                  <img src="./public/arrow.svg" style="width: 28.67px; height: 8px; padding-left: 0.5rem; padding-bottom: 0.3rem;">
+                 999
+                  <img src="./public/arrowrev.svg" alt="" style="width: 28.67px; height: 8px;   padding-left: 0.5rem;">
+                </div>
+                <button class="wineoverlaybutton">DO KOŠÍKU</button>
+                <div class="wineoverlaydetail"> 
+                  DETAIL
+                </div>
+              </div>
+              
+              <img src="./public/3.png" style="padding-left:1rem; padding-right:1rem; width: 95px; height: 327px;">
+              <div style="height: 327px; display: flex; flex-direction: column; ">
+              <div class="winename">DORNFELDER <br/> BARRIQUE</div>
+              <div class="wineorigin">Víno Čejč</div>
+              <div class="winedate">2018 <br/> bílé suché</div>
+              <div class="winesale">9 999 Kč</div>
+              <div class="wineprice">999 Kč</div>
+              <div style="display: flex; flex-direction: row;">
+              <img src="./public/checkmark.svg" >
+              <div class="wineskladem">Skladem</div>
+              </div>
+              </div>
+              </div>
+              </div>
+            </div>
+
 </div>
-<div style="width:100%; display:flex; justify-content: center; padding-top: 3rem; padding-bottom: 3rem;">
-<button class="buttonunderwine" style="width: 305px; height: 71px;   font-size: 18px; font-family: 'Poppins', sans-serif; font-weight: bold; ">CELÁ NABÍDKA</button>
+<div style="width:100%; display:flex; justify-content: center; padding-top: 1rem; padding-bottom: 2rem;">
 </div>   
 </div>
 
-
+<div class="divbodyborder"> 
+  <div style="height: 52px; width:100%; display: flex; flex-direction: row; justify-content: center; padding-bottom: 4rem;">
+    <div class="pageselect pageselectactive">1</div>
+    <div class="pageselect">2</div>
+    <div class="pageselect">3</div>
+    <div class="pageselect">4</div>
+    <div class="pageselect">5</div>
+  </div>
+</div>
 
 <img src="./public/5.png" style="width:100%; height: 720px; position: absolute; z-index: -1;">
 
@@ -412,49 +556,8 @@ Doporučujeme
 </div>
 </div>
 
-<div class="divbodyborder"> 
-<div class="overarticleheader"> NEVINNĚ <br/> O VÍNĚ</div>
-  </div>
 
 
-<div class="divbodyborder" style="margin-bottom: 3rem;"> 
-<div class="articleflex">
-<div style="display: flex; flex-direction: column; ">
-<div class="articleheader">VÍNO <br/> MĚSÍCE</div>
-<div class="article">
-<div style="display:flex; flex-direction: column;  ">
-  <div class="articlename">MERLOT <br> BARRIQUE</div>
-  <div class="articlewinedesc">Víno Čejč</div>
-  <div class="articlewinedesc2">2018 <br> bílé suché</div>
-  <div class="articletext" style="padding-top: 2rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
-    <div style="margin: 0 auto; padding-top: 2rem;" class="articlebuttondiv">
-    <button class="articlebutton">KOUPIT VÍNO</button></div>
-</div>
-
-<img src="./public/6.png" style="width:215px; height: 551px; ">
-</div>
-</div>
-
-<div style="display: flex; flex-direction: column; ">
-<div class="articleheader">NÁZEV <br/>KATEGORIE</div>
-<div class="article2" >
-<img src="./public/7.png" style=" max-height: 255px; " >
-<div class="article2name">EDITOVATELNÝ TITULEK</div>
-<div class="articletext" style="padding-top: 1.3rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-  <div style="margin: 0 auto; padding-top: 2rem;" class="articlebuttondiv">
-<button  class="article2button">PROKLIK</button>
-</div></div>
-
-</div>
-
-</div>
-
-</div>
-
-<img src="./public/5.png" style="width:100%; height: 657.5px; position: absolute; z-index: -3;">
 
 <div class="divbodyborder" style="padding-top: 3rem; "> 
 <div class="newsmaindiv">
@@ -485,7 +588,7 @@ Doporučujeme
 
 <div class="footerdiv">
 
-  <div style="display: flex; flex-direction:column; max-width: 600px; " class="footerlogo">
+  <div style="display: flex; flex-direction:column; max-width: 600px;" class="footerlogo">
   <img src="./public/logo.svg" alt="">
   </div>
 
@@ -568,36 +671,36 @@ Doporučujeme
 </div></footer>
 
 <script>
-  $(document).ready(function() {
-    $('div.indx').click(function() {
-        window.location.href = this.id + './index.html';
-    });
+$(document).ready(function() {
+  $('div.indx').click(function() {
+      window.location.href = this.id + './index.html';
   });
-  
-  $(document).ready(function() {
-    $('div.ww').click(function() {
-        window.location.href = this.id + './whitewine.html';
-    });
+});
+
+$(document).ready(function() {
+  $('div.ww').click(function() {
+      window.location.href = this.id + './whitewine.html';
   });
-  
-  $(document).ready(function() {
-    $('div.rw').click(function() {
-        window.location.href = this.id + './redwine.html';
-    });
+});
+
+$(document).ready(function() {
+  $('div.rw').click(function() {
+      window.location.href = this.id + './redwine.html';
   });
-  
-  $(document).ready(function() {
-    $('div.pw').click(function() {
-        window.location.href = this.id + './pinkwine.html';
-    });
+});
+
+$(document).ready(function() {
+  $('div.pw').click(function() {
+      window.location.href = this.id + './pinkwine.html';
   });
-  
-  $(document).ready(function() {
-    $('div.ps').click(function() {
-        window.location.href = this.id + './prosecco.html';
-    });
+});
+
+$(document).ready(function() {
+  $('div.ps').click(function() {
+      window.location.href = this.id + './prosecco.html';
   });
-  </script>
+});
+</script>
 </body>
 </html>
 
