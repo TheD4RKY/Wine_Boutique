@@ -26,8 +26,10 @@
   
    <div class="menu_overlay" id="translatetoggle">
     <div class="divbodyborder">
-      <div style="display: flex; flex-direction: row; justify-content: space-between;">
+      <div class="flexlist">
+
     <ul class="list">
+      <li class="listactive"><a href="#">VÍNA</a></li>
       <li><a href="#">VŠECHNA VÍNA</a></li>
       <li><a href="#">BÍLÁ VÍNA</a></li>
       <li><a href="#">ČERVENÁ VÍNA</a></li>
@@ -37,6 +39,7 @@
     
 
     <ul class="list">
+      <li class="listactive"><a href="#">OSTATNÍ</a></li>
       <li><a href="#">OBCHODNÍ PODMÍNKY</a></li>
       <li><a href="#">DOPRAVA</a></li>
       <li><a href="#">VRÁCENÍ A REKLAMACE</a></li>
@@ -67,10 +70,12 @@
 <div >
   <img src="./public/logo.svg" class="mainlogo">
 </div>
-<div class="shoppin"                    >
-<img src="./public/2.png" style="color:white; font-size: 18px; padding-right: 2rem;">
-<div style="padding-right: 4rem; position: absolute; padding-top: 2.2rem;"><div class="circle" > 0 </div></div>
-<div class="poppinsbold shoppintext" > KOŠÍK </div>
+<div class="shoppin">
+  <img src="./public/2.png" style="color:white; font-size: 18px; margin-right: 2rem;">
+  <div style=" margin-right: 3.8rem; position: absolute; padding-top: 2.2rem;">
+    <div class="circle"> 0 </div>
+  </div>
+  <div class="poppinsbold shoppintext"> KOŠÍK </div>
 </div>
 </nav>
 
@@ -471,9 +476,9 @@ Doporučujeme
 
 
 </div>
-<div style="height: 360px;  width: 100%; margin-top: 0.8rem;">
-  <div class="footerbody" >
-<img src="./public/Color Overlay.svg" style=" object-fit: cover; height: 360px; width: 100%; position: absolute; z-index: -1;"></div>
+<div style="height: 100%;  width: 100%; margin-top: 0.8rem; background-color:  #e6e6e6;" class="footerbox">
+  <!-- <div class="footerbody" >
+<img src="./public/Color Overlay.svg" style=" object-fit: cover; height: 360px; width: 100%; position: absolute; z-index: -1;"></div> -->
 <div class="divbodyborder" style="padding-top: 8rem;"> 
 
 <div class="footerdiv">
@@ -534,9 +539,9 @@ Doporučujeme
   v případě technického výpadku pak nejpozději do 48 hodin.
    Vína a sekty prodáváme výhradně starším 18 let.</div>
 
-</div>
+</div></div>
 
-<div class="copyright" style="margin-top: 4.7rem;">
+<footer class="copyright" >
 <div class="divbodyborder" style="display: flex; flex-direction:row; justify-content: space-between; padding: 18px 0;">
 
 
@@ -558,7 +563,7 @@ Doporučujeme
 </div></div>
 
 
-</div></div>
+</div></footer>
 
 
 </body>

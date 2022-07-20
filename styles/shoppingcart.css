@@ -126,12 +126,12 @@ display: block;
       }
         @media (max-width: 480px) {
           .mainlogo{
-            transform: scale(0.7);
-          
+            transform: scale(0.6);
             padding-right: 3rem;
 
 
           }
+
           .shoppin{
             width: 2px;
             height: 101px;

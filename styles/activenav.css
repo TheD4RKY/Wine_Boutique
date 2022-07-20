@@ -12,7 +12,11 @@
   justify-content: center;
   align-items: center;
 }
-
+.flexlist{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
 .active{
   width: 100vw;
   height: 100vh;
@@ -72,11 +76,24 @@
   color: #222;
 }
 
-
+.listactive{
+  display: none;
+}
 
 @media screen and (max-width: 450px) {
+.listactive{
+  display: block;
+}
+
   .list {
     display: flex;
     flex-direction: column;
+    display: none;
   }
+
+  .flexlist{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+}
 }

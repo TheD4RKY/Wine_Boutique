@@ -1,8 +1,14 @@
+.footerbox{
+  background: url("../public/Color Overlay.svg"), #6DB3F2;;
+  background-position: center;
+  background-size: cover;
+  
+}
+
 .copyright{
   height: 58px;
   width: 100%;
   background-color: #222F5E;
-  margin-top: 2.7rem;
 }
 
 .copyrighttext1{
@@ -44,14 +50,14 @@ flex-direction: row;
 @media (min-width: 1025px) and (max-width: 1280px){
   .copyright{
     height: 78px;
-    margin-top: 2.7rem;
+    
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
   .copyright{
     height: 78px;
-    margin-top: 2.7rem;
+   
   }
 }
 
@@ -97,6 +103,6 @@ flex-direction: column;
 
 .copyright{
   height: 78px;
-  margin-top: 2.7rem;
+  
 }
     }
