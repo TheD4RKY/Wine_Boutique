@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<link rel="stylesheet" href="./styles/global.css" >
+<link rel="stylesheet" href="./styles/copyright.css" >
+<link rel="stylesheet" href="./styles/sale.css" >
+<link rel="stylesheet" href="./styles/footer.css" >
+<link rel="stylesheet" href="./styles/news.css" >
+<link rel="stylesheet" href="./styles/whitewine_components/menuwhitewine.css" >
+<link rel="stylesheet" href="./styles/wineselect.css" >
+<link rel="stylesheet" href="./styles/shoppingcart.css" >
+<link rel="stylesheet" href="./styles/hamburger.css" >
+<link rel="stylesheet" href="./styles/article.css" >
+<link rel="stylesheet" href="./styles/nav.css" >
+<link rel="stylesheet" href="./styles/paddingdiv.css" >
+<link rel="stylesheet" href="./styles/activenav.css" >
+<link rel="stylesheet" href="./styles/whitewine_components/winefilter.css" >
+<script src="./js/burgerchange.js"></script>
+<script src="./js/navbar.js"></script>
+<script src="./js/navtoggle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body style="max-width: 1920px;" onresize="resize()">
+
+  <img src="./public/1.png" style="object-fit: cover; height: 332px; position: absolute; z-index: -1; min-width: 100%;">
+  
+   <div class="menu_overlay" id="translatetoggle">
+    <div class="divbodyborder">
+      <div class="flexlist">
+
+    <ul class="list">
+      <li class="listactive"><a onclick="toggle(1);">KATEGORIE</a></li>
+      <li class="list1"><a href="./index.html">VŠECHNA VÍNA</a></li>
+      <li class="list1"><a href="./whitewine.html">BÍLÁ VÍNA</a></li>
+      <li class="list1"><a href="./redwine.html">ČERVENÁ VÍNA</a></li>
+      <li class="list1"><a href="./pinkwine.html">RŮŽOVÁ VÍNA</a></li>
+      <li class="list1"><a href="./proseccowine.html">PROSECCO</a></li>
+    </ul>
+    
+
+    <ul class="list">
+      <li class="listactive" ><a onclick="toggle(2);">OSTATNÍ</a></li>
+      <li class="list2"><a href="#">OBCHODNÍ PODMÍNKY</a></li>
+      <li class="list2"><a href="#">DOPRAVA</a></li>
+      <li class="list2"><a href="#">VRÁCENÍ A REKLAMACE</a></li>
+    </ul>
+
+    <ul class="list">
+      <li class="listactive" ><a onclick="toggle(3);">KONTAKTY</a></li>
+      <li class="list3"><a href="https://www.facebook.com/wineboutique.cz/">FACEBOOK</a></li>
+      <li class="list3"><a href="https://www.instagram.com/wineboutique.cz/">INSTAGRAM</a></li>
+      <li class="list3"><a href="#">TEL.: +420 775 105 808</a></li>
+    </ul>
+  </div>
+  </div>
+</div> 
+
+
+<div class="divbodyborder">
+  <nav style="height: 101px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+<div class="container" >
+<div class="container2" onclick="myFunction(this)" style="z-index: 101;">
+  <div class="bar1" ></div>
+  <div class="bar2" ></div>
+  <div class="bar3" ></div>
+</div>
+<div class="poppinsbold menu">
+  MENU
+</div>
+</div>
+<div >
+  <img src="./public/logo.svg" class="mainlogo">
+</div>
+<div class="shoppin">
+  <img src="./public/2.png" style="color:white; font-size: 18px; margin-right: 2rem;">
+  <div style=" margin-right: 3.8rem; position: absolute; padding-top: 2.2rem;">
+    <div class="circle"> 0 </div>
+  </div>
+  <div class="poppinsbold shoppintext"> KOŠÍK </div>
+</div>
+</nav>
+
+
+
+<div class="titlediv">
+  
+  <div class="title2">BÍLÁ VÍNA
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+<div  style="width:50%; max-height: 732px; position: absolute; right: 0; z-index: -3; padding-bottom: 20rem;">
+  <img src="./public/Color Overlay.png" style="object-fit: cover; position: absolute;  max-height: 732px; right: 0; z-index: -3; padding-bottom: 20rem;"></div>
+<div class="menunav">
+
+ 
+
+<div class="divbodyborder menunavtext" style="height:100%; display: flex; z-index: 1; ">
+
+  <div class="menunavtextin indx" style=" width: 20%; height:100%;">
+  VŠECHNA <br/>VÍNA
+  </div>
+  
+  <div class="menunavtextin  ww" style=" width: 20%; height:100%;">
+  BÍLÁ <br/> VÍNÁ
+  </div>
+  
+  <div class="menunavtextin rw" style=" width: 20%; height:100%;">
+  ČERVENÁ <br/> VÍNA
+  </div>
+  
+  <div class="menunavtextin pw" style=" width: 20%; height:100%;">
+  RŮŽOVÁ <br/> VÍNA
+  </div>
+    
+  <div class="menunavtextin ps" style=" width: 20%; height:100%;">
+  PROSECCO
+  </div>
+</div>
+</div>
+  
+
+
+<img src="./public/5.png" style="width:100%; height: 720px; position: absolute; z-index: -1;">
+
+
+
+<div class="divbodyborder"> 
+<div style="display: flex; flex-direction: row;">
+<div style="display: flex; flex-direction: column; width: 100%; ">
+<div class="saleheader">NÁZEV AKCE</div>
+<div class="saledescription">Text k akci (doprava zdarma...)</div>
+
+<div class="saleimg2">
+
+  <img src="./public/4.png">
+  
+  </div>
+<div class="salebuttondiv">
+<button class="salebutton">NAKOUPIT</button>
+</div>
+</div>
+<div class="saleimg">
+
+  <img src="./public/4.png">
+  
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="divbodyborder" style="padding-top: 3rem; "> 
+<div class="newsmaindiv">
+  <div style="display:flex; flex-direction:column;">
+  <div class="newsheader">BUĎTE <br>V OBRAZE</div>
+  <div class="newstext" style="padding-top: 1rem;">Přihlaste se k odběru novinek a neunikne<br> vám žádná akce Wine boutique</div>
+  </div>
+  <div class="newsformdiv">
+  <form  class="newsform">
+    <div style="padding-right: 1rem;">
+    <input class="newsinput" type="text" placeholder="VÁŠ E-MAIL" name="EMAIL" >
+  </div>
+    <input class="newssubmit" type="submit" value="PŘIHLÁSIT K ODBĚRU">
+
+  </form>
+  </div>
+</div>
+
+
+
+
+
+</div>
+<div style="height: 100%;  width: 100%; margin-top: 0.8rem; background-color:  #e6e6e6;" class="footerbox">
+  <!-- <div class="footerbody" >
+<img src="./public/Color Overlay.svg" style=" object-fit: cover; height: 360px; width: 100%; position: absolute; z-index: -1;"></div> -->
+<div class="divbodyborder" style="padding-top: 8rem;"> 
+
+<div class="footerdiv">
+
+  <div style="display: flex; flex-direction:column; max-width: 600px;" class="footerlogo">
+  <img src="./public/logo.svg" alt="">
+  </div>
+
+  <div style="display: flex; flex-direction:column;" class="column1">
+  <div>ČERVENÁ VÍNA </div>
+  <div>BÍLÁ VÍNA </div>
+  <div>SEKTY </div>
+  <div>RŮŽOVÁ VÍNA </div>
+  <div>DOPLŇKY </div>
+  
+  
+  </div>
+
+  <div style="display: flex; flex-direction:column;" class="column2">
+  
+    <div>OBCHODNÍ PODMÍNKY </div>
+    <div>DOPRAVA </div>
+    <div>VRÁCENÍ A REKLAMACE </div>
+  
+  </div>
+
+  <div style="display: flex; flex-direction:column; ">
+    <div style="display: flex; flex-direction:row; " class="footercolflex footercolflexp">
+      <div class="column3_1">FB: </div>
+      <div class="column3_2">&nbsp;/wineboutique.cz </div>
+    </div>
+    
+    <div style="display: flex; flex-direction:row;" class="footercolflex">
+      <div class="column3_1">IG: </div>
+      <div class="column3_2">&nbsp;/@wineboutique.cz </div>
+    </div>
+  
+    <div style="display: flex; flex-direction:row; padding-top: 1.8rem;" class="footercolflex">
+      <div class="column3_1">TEL.: </div>
+      <div class="column3_2">&nbsp;+420 775 105 808 </div>
+    </div>
+
+    <div style="display: flex; flex-direction:row;" class="footercolflex">
+      <div class="column3_1">E-MAIL: </div>
+      <div class="column3_2">&nbsp;wine@wineboutique.cz </div>
+    </div>
+
+    
+  </div>
+
+  
+
+</div>
+
+
+<div class="underlineinfo ">Podle zákona o evidenci tržeb je prodávající povinen vystavit kupujícímu účtenku.
+  Zároveň je povinen zaevidovat přijatou tržbu u správce daně online; 
+  v případě technického výpadku pak nejpozději do 48 hodin.
+   Vína a sekty prodáváme výhradně starším 18 let.</div>
+
+</div></div>
+
+<footer class="copyright" >
+<div class="divbodyborder" style="display: flex; flex-direction:row; justify-content: space-between; padding: 18px 0;">
+
+
+<div class="cpgroup">
+<div class="copyrighttext1" style="padding-right: 0.5rem;">
+  Copyright © 2022
+</div>
+<div class="copyrighttext2">
+  Wineboutique s.r.o.
+</div></div>
+
+
+<div class="cpgroup">
+<div class="copyrighttext3" style="padding-right: 0.5rem;">
+  Webdesign by
+</div>
+<div class="copyrighttext4">
+  SYNAPSE/5
+</div></div>
+
+
+</div></footer>
+
+<script>
+$(document).ready(function() {
+  $('div.indx').click(function() {
+      window.location.href = this.id + './index.html';
+  });
+});
+
+$(document).ready(function() {
+  $('div.ww').click(function() {
+      window.location.href = this.id + './whitewine.html';
+  });
+});
+
+$(document).ready(function() {
+  $('div.rw').click(function() {
+      window.location.href = this.id + './redwine.html';
+  });
+});
+
+$(document).ready(function() {
+  $('div.pw').click(function() {
+      window.location.href = this.id + './pinkwine.html';
+  });
+});
+
+$(document).ready(function() {
+  $('div.ps').click(function() {
+      window.location.href = this.id + './prosecco.html';
+  });
+});
+</script>
+</body>
+</html>
+
+
