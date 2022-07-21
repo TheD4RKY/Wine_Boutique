@@ -1,0 +1,23 @@
+.addincart{
+  width: 217px; 
+  height: 61px; 
+  border: 2px solid #C47D59; 
+  color: #1D3258; 
+  font-size: 18px; 
+  font-family: 'Poppins', sans-serif; 
+  font-weight: bold; 
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+.addincart:hover{
+  background-color: #C47D59;
+  border: 2px solid #C47D59;
+  color: white;
+}
+
+.addincartdiv{
+  padding-top: 20px;
+  padding-left: 60px;
+}
