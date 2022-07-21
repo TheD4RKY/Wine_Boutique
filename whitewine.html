@@ -31,32 +31,32 @@
     <div class="divbodyborder">
       <div class="flexlist">
 
-    <ul class="list">
-      <li class="listactive"><a onclick="toggle(1);">KATEGORIE</a></li>
-      <li class="list1"><a href="./index.html">VŠECHNA VÍNA</a></li>
-      <li class="list1"><a href="./whitewine.html">BÍLÁ VÍNA</a></li>
-      <li class="list1"><a href="./redwine.html">ČERVENÁ VÍNA</a></li>
-      <li class="list1"><a href="./pinkwine.html">RŮŽOVÁ VÍNA</a></li>
-      <li class="list1"><a href="./proseccowine.html">PROSECCO</a></li>
-    </ul>
+        <ul class="list">
+          <li class="listactive"><a onclick="toggle(1);">KATEGORIE <img src="./public/arrowrev2.svg" style="z-index: 101; padding-left: 1rem; padding-bottom: 0.3rem;"></a></li>
+          <li class="list1"><a href="./index.html">VŠECHNA VÍNA</a></li>
+          <li class="list1"><a href="./whitewine.html">BÍLÁ VÍNA</a></li>
+          <li class="list1"><a href="./redwine.html">ČERVENÁ VÍNA</a></li>
+          <li class="list1"><a href="./pinkwine.html">RŮŽOVÁ VÍNA</a></li>
+          <li class="list1"><a href="./proseccowine.html">PROSECCO</a></li>
+        </ul>
+        
     
-
-    <ul class="list">
-      <li class="listactive" ><a onclick="toggle(2);">OSTATNÍ</a></li>
-      <li class="list2"><a href="#">OBCHODNÍ PODMÍNKY</a></li>
-      <li class="list2"><a href="#">DOPRAVA</a></li>
-      <li class="list2"><a href="#">VRÁCENÍ A REKLAMACE</a></li>
-    </ul>
-
-    <ul class="list">
-      <li class="listactive" ><a onclick="toggle(3);">KONTAKTY</a></li>
-      <li class="list3"><a href="https://www.facebook.com/wineboutique.cz/">FACEBOOK</a></li>
-      <li class="list3"><a href="https://www.instagram.com/wineboutique.cz/">INSTAGRAM</a></li>
-      <li class="list3"><a href="#">TEL.: +420 775 105 808</a></li>
-    </ul>
-  </div>
-  </div>
-</div> 
+        <ul class="list">
+          <li class="listactive" ><a onclick="toggle(2);">OSTATNÍ <img src="./public/arrowrev2.svg" style="z-index: 101; padding-left: 1rem; padding-bottom: 0.3rem;"></a></li>
+          <li class="list2"><a href="#">OBCHODNÍ PODMÍNKY</a></li>
+          <li class="list2"><a href="#">DOPRAVA</a></li>
+          <li class="list2"><a href="#">VRÁCENÍ A REKLAMACE</a></li>
+        </ul>
+    
+        <ul class="list">
+          <li class="listactive" ><a onclick="toggle(3);">KONTAKTY <img src="./public/arrowrev2.svg" style="z-index: 101; padding-left: 1rem; padding-bottom: 0.3rem;"></a></li>
+          <li class="list3"><a href="https://www.facebook.com/wineboutique.cz/">FACEBOOK</a></li>
+          <li class="list3"><a href="https://www.instagram.com/wineboutique.cz/">INSTAGRAM</a></li>
+          <li class="list3"><a href="#">TEL.: +420 775 105 808</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>  
 
 
 <div class="divbodyborder">
@@ -594,11 +594,11 @@
   </div>
 
   <div style="display: flex; flex-direction:column;" class="column1">
-  <div>ČERVENÁ VÍNA </div>
-  <div>BÍLÁ VÍNA </div>
-  <div>SEKTY </div>
-  <div>RŮŽOVÁ VÍNA </div>
-  <div>DOPLŇKY </div>
+    <div class="indx">ČERVENÁ VÍNA </div>
+  <div class="ww">BÍLÁ VÍNA </div>
+  <div class="rw">ČERVENÁ VÍNA </div>
+  <div class="pw">RŮŽOVÁ VÍNA </div>
+  <div class="ps">PROSSECA </div>
   
   
   </div>
@@ -701,6 +701,12 @@ $(document).ready(function() {
       window.location.href = this.id + './prosecco.html';
   });
 });
+
+$(document).ready(function() {
+    $('div.wineoverlaydetail').click(function() {
+        window.location.href = this.id + './winedetail.html';
+    });
+  });
 </script>
 </body>
 </html>

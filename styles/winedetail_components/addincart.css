@@ -21,11 +21,18 @@
   padding-top: 20px;
   padding-left: 60px;
 }
-
-@media screen and (max-width: 450px) {
-
+@media (min-width: 481px) and (max-width: 767px) {
   .addincartdiv{
-    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
   }
-  
+}
+@media screen and (max-width: 450px) {
+.addincartdiv{
+  width: 100%;
+  padding-left: 0;
+}
+.addincart{
+  margin: 0;
+}
 }

@@ -93,11 +93,34 @@
   font-weight: bold;
   padding-top: 2rem;
 }
-
+@media (min-width: 481px) and (max-width: 767px) {
+  .wineimgflex{
+    flex-direction: column;
+  }
+  .wineimgdiv{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .wineflexbut{
+    
+      flex-direction: column;
+    
+  }
+}
 @media screen and (max-width: 450px) {
   .wineimgflex{
     flex-direction: column;
   }
-  
-  
+  .wineimgdiv{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .wineflexbut{
+    
+    
+      flex-direction: column;
+    
+  }
 }
