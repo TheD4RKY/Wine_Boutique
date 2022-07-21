@@ -7,22 +7,15 @@
 
 .wineimgdiv{
   height: 510px;
-  cursor: zoom-in;
   overflow: hidden;
 }
-.wineimgdiv:hover{
-  opacity: 1;
-}
+
 
 .wineimg{
   height: 510px;
-  width: 100%;
-  cursor: zoom-in;
+  max-width: 100%;
 }
 
-.wineimg:hover {
-  opacity: 0;
-}
 
 .winedivflex{
   display: flex;
@@ -99,4 +92,12 @@
   font-size: 28px;
   font-weight: bold;
   padding-top: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .wineimgflex{
+    flex-direction: column;
+  }
+  
+  
 }
