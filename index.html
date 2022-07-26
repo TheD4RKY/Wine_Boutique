@@ -465,9 +465,9 @@ Doporučujeme
   </div>
   <div class="newsformdiv">
   <form  class="newsform">
-    <div style="padding-right: 1rem;">
+    
     <input class="newsinput" type="text" placeholder="VÁŠ E-MAIL" name="EMAIL" >
-  </div>
+  
     <input class="newssubmit" type="submit" value="PŘIHLÁSIT K ODBĚRU">
 
   </form>
@@ -479,7 +479,7 @@ Doporučujeme
 
 
 </div>
-<div style="height: 100%;  width: 100%; margin-top: 0.8rem; background-color:  #e6e6e6;" class="footerbox">
+<div style="height: 100%;  width: 100%; margin-top: 0.8rem; background-color:  #e6e6e6; " class="footerbox">
   <!-- <div class="footerbody" >
 <img src="./public/Color Overlay.svg" style=" object-fit: cover; height: 360px; width: 100%; position: absolute; z-index: -1;"></div> -->
 <div class="divbodyborder" style="padding-top: 8rem;"> 
@@ -487,7 +487,7 @@ Doporučujeme
 <div class="footerdiv">
 
   <div style="display: flex; flex-direction:column; max-width: 600px; " class="footerlogo">
-  <img src="./public/logo.svg" alt="">
+  <img src="./public/logo.svg" class="logohref">
   </div>
 
   <div style="display: flex; flex-direction:column;" class="column1">
@@ -607,6 +607,12 @@ Doporučujeme
 
   $(document).ready(function() {
   $('img.mainlogo').click(function() {
+      window.location.href = this.id + './index.html';
+  });
+});
+
+$(document).ready(function() {
+  $('img.logohref').click(function() {
       window.location.href = this.id + './index.html';
   });
 });

@@ -218,7 +218,7 @@
 <div class="footerdiv">
 
   <div style="display: flex; flex-direction:column; max-width: 600px;" class="footerlogo">
-  <img src="./public/logo.svg" alt="">
+  <img src="./public/logo.svg" alt="" class="logohref">
   </div>
 
   <div style="display: flex; flex-direction:column;" class="column1">
@@ -332,6 +332,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('img.mainlogo').click(function() {
+      window.location.href = this.id + './index.html';
+  });
+});
+
+$(document).ready(function() {
+  $('img.logohref').click(function() {
       window.location.href = this.id + './index.html';
   });
 });
