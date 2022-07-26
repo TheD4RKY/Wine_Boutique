@@ -53,6 +53,10 @@ opacity: 1;
 text-align: center;
 }
 
+input[type="text"]{
+  outline: none;
+}
+
 .newsform{
   display:flex; 
   flex-direction:row;
@@ -71,7 +75,14 @@ text-align: center;
 }
 
 @media (min-width: 1480px) and (max-width: 1762px){
-
+  .newssubmit{
+    width: inherit;
+    min-width: 400px;
+  }
+  .newsinput{
+    width: inherit;
+    min-width: 362px;
+  }
   .newsform{
     align-items: center;
     display:flex; 
@@ -86,10 +97,10 @@ text-align: center;
 
 @media (min-width: 1025px) and (max-width: 1480px){
   .newssubmit{
-    width: 50%;
+    width: inherit;
   }
   .newsinput{
-    width: 100%;
+    width: inherit;
   }
 
 .newsform{
@@ -111,10 +122,10 @@ justify-content: space-between;
  
 @media (min-width: 768px) and (max-width: 1024px){
   .newssubmit{
-    width: 98.5%;
+    width: inherit;
   }
   .newsinput{
-    width: 100%;
+    width: inherit;
   }
 
 .newsform{
@@ -127,19 +138,21 @@ padding-top: 2rem;
 display:flex; 
 flex-direction: column;
 }
+
 .newsmaindiv{
 display:flex; 
 flex-direction: column; 
 justify-content: space-between;
 }
+
 }
 
   @media (min-width: 481px) and (max-width: 767px) {
     .newssubmit{
-      width: 98%;
+      width: inherit;
     }
     .newsinput{
-      width: 100%;
+      width: inherit;
     }
 
 .newsform{
@@ -161,10 +174,10 @@ justify-content: space-between;
 
   @media (max-width: 480px) {
     .newssubmit{
-      width: 97%;
+      width: inherit;
     }
     .newsinput{
-      width: 100%;
+      width: inherit;
     }
 
 .newsheader{
