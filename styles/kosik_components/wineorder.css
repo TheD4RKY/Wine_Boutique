@@ -1,0 +1,25 @@
+.ordercol{
+display: flex;
+flex-direction: column;
+}
+
+.orderrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.orderrow div{
+  width: 25%;
+ 
+}
+
+.ordertextleft{
+  text-align: left;
+}
+
+
+.ordertextcenter{
+  text-align: center;
+}
