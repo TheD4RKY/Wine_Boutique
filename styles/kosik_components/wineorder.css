@@ -7,7 +7,19 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border-bottom-style: solid;
+  border-color: #1D3258;
+  border-width: 1px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
 
+.orderrowcount{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .orderrow div{
@@ -17,9 +29,61 @@ flex-direction: column;
 
 .ordertextleft{
   text-align: left;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #C47D59; 
 }
 
+.ordertextcenterh{
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #1D3258; 
+}
 
 .ordertextcenter{
   text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #1D3258; 
+}
+
+.ordertextcenternum{
+  max-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #1D3258;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid #C47D59;
+  border-radius:0px;
+}
+
+.ordernodph{
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #C47D59; 
+  display: flex;
+  flex-direction: row;
+}
+
+.orderdph{
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #C47D59; 
+  display: flex;
+  flex-direction: row;
 }
